@@ -41,7 +41,7 @@ fig_employee.update_layout(uniformtext_minsize=8, uniformtext_mode='hide', xaxis
 # # ***************************************
 fig_product = px.bar(order, 
      x='productname', y='total', 
-     color='type', text='total', title='Sales by Product',
+     color='type', text='total', title='Sales by Products',
      hover_data=[],
      labels={'total':'Total sales', 'productname':'Product', 'type':'Product Type'})
 fig_product.update_traces(texttemplate='%{text:.2s}', textposition='outside')
