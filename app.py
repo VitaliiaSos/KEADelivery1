@@ -60,25 +60,25 @@ app = dash_app.server
 # ***************************************
 dash_app.layout = html.Div(
     children=[
-        # html.Div(className='row',
-        #         # children=[
-        #         #     html.Div(className='four columns div-user-controls',
-        #         #             children=[
-        #         #                 html.H2('Sales dashboard'),
-        #         #                 html.P('Select filters from dropdown'),
+        html.Div(className='row',
+                children=[
+                    html.Div(className='four columns div-user-controls',
+                            children=[
+                                html.H2('Sales dashboard'),
+                                html.P('Select filters from dropdown'),
 
-        #         #     html.Div(children="Month", className="menu-title"),
-        #         #             dcc.Dropdown(
-        #         #                 id='drop_month',
-        #         #                 options=[{'label':selectmonth, 'value':selectmonth} for selectmonth in df_month['monthnames']],
-        #         #             ),
-        #         #     html.Div(children="Year", className="menu-title"),
-        #         #             dcc.Dropdown(
-        #         #                 id='drop_year',
-        #         #                 options=[{'label':selectyear, 'value':selectyear} for selectyear in df_year]
-        #         #             ),
-        #         #             ]
-        #             ),
+                    html.Div(children="Month", className="menu-title"),
+                            dcc.Dropdown(
+                                id='drop_month',
+                                options=[{'label':selectmonth, 'value':selectmonth} for selectmonth in df_month['monthnames']],
+                            ),
+                    html.Div(children="Year", className="menu-title"),
+                            dcc.Dropdown(
+                                id='drop_year',
+                                options=[{'label':selectyear, 'value':selectyear} for selectyear in df_year]
+                            ),
+                            ]
+                    ),
                     html.Div(className='eight columns div-for-charts bg-grey',
                             children=[
                                 dcc.Graph(id="sales_employee", figure=fig_employee)
@@ -91,8 +91,8 @@ dash_app.layout = html.Div(
                     ),
                 ]
             )
-#         ]
-# )
+        ]
+)
 
 # ***************************************
 # Callbacks
