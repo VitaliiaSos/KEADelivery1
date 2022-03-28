@@ -51,7 +51,6 @@ fig_product.update_layout(uniformtext_minsize=8, uniformtext_mode='hide', xaxis_
 # Activate the app
 # ***************************************
 
-
 dash_app = dash.Dash(__name__)
 app = dash_app.server
 
