@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'VSfakedata'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_88233521F02546359082478818C96D8D }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A95FAEAF2E3C4EFE8218726139A97E6C }}
